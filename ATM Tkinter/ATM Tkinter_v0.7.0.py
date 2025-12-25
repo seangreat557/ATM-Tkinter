@@ -85,7 +85,9 @@ class Start(tk.Frame):
 
         self.controller.title('ATM')
         self.controller.state('zoomed')
-        self.controller.iconphoto(False,tk.PhotoImage(file='C:/Users/admin/Downloads/ATM Tkinter/logo_itb_128.png'))
+
+        # Add The ITB Logo Here
+        self.controller.iconphoto(False,tk.PhotoImage(file=''))
 
         label = ttk.Label(self, text="ATM", font = ('Verdana',60,'bold'), 
                           foreground = 'white', background= 'blue')
@@ -1410,4 +1412,5 @@ class Transfer5(tk.Frame):
         Wrong.grid(row = 6, column= 1, pady =10)
 
 app = tkinterApp()
+
 app.mainloop()
